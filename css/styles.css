@@ -8,22 +8,24 @@
   --cloud-color: #f4f4fd;
   --background-color: #ffffff;
   --navy-blue-color: #2e2f42;
-  --primary-fond: "Roboto", sans-serif;
+  --primary-fond: Roboto, sans-serif;
 }
 .list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
 
 /* Header */
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris-color);
-  text-decoration: none;
 }
 .logo-dark {
   color: var(--navy-blue-color);
@@ -31,7 +33,7 @@
 .menu-link {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.33;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue-color);
   text-decoration: none;
@@ -46,6 +48,7 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--slate-color);
+  font-style: normal;
 }
 .contact-email:hover,
 .contact-email:focus {
@@ -57,6 +60,7 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--slate-color);
+  font-style: normal;
 }
 .contact-phone:hover,
 .contact-phone:focus {
@@ -64,7 +68,7 @@
 }
 
 body {
-  font-family: var("Roboto", sans-serif);
+  font-family: var(Roboto, sans-serif);
   color: var(--slate-color);
   background: var(--background-color);
 }
@@ -75,7 +79,7 @@ body {
 .main-title {
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.08;
+  line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--background-color);
@@ -87,6 +91,8 @@ body {
   letter-spacing: 0.04em;
   background: var(--iris-color);
   cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  color: var(--background-color);
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -100,6 +106,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--navy-blue-color);
 }
 .text-description {
   font-size: 16px;
@@ -119,12 +126,18 @@ body {
   color: var(--navy-blue-color);
 }
 /* Team */
+.our-team {
+  background: var(--cloud-color);
+}
 .name-team {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue-color);
+}
+.team-img {
+  background-color: #ffffff;
 }
 /* Footer */
 .conteiner-footer {
@@ -148,13 +161,14 @@ body {
   color: var(--navy-blue-color);
 }
 .portfolio-button {
-  background: var(--cornflower-color);
+  background: var(--cloud-color)
   color: var(--iris-color);
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  font-family: 'Roboto', sans-serif;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
