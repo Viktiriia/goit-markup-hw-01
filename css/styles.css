@@ -10,6 +10,11 @@
   --navy-blue-color: #2e2f42;
   --primary-fond: Roboto, sans-serif;
 }
+body {
+  font-family: var(Roboto, sans-serif);
+  color: var(--slate-color);
+  background: var(--background-color);
+}
 .list {
   list-style: none;
 }
@@ -42,7 +47,7 @@
 .menu-link:focus {
   color: var(--ocean-color);
 }
-.contact-email {
+.contact {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -50,28 +55,11 @@
   color: var(--slate-color);
   font-style: normal;
 }
-.contact-email:hover,
-.contact-email:focus {
-  color: var(--ocean-color);
-}
-.contact-phone {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--slate-color);
-  font-style: normal;
-}
-.contact-phone:hover,
-.contact-phone:focus {
+.contact:hover,
+.contact:focus {
   color: var(--ocean-color);
 }
 
-body {
-  font-family: var(Roboto, sans-serif);
-  color: var(--slate-color);
-  background: var(--background-color);
-}
 /* Hero */
 .hero {
   background: var(--navy-blue-color);
@@ -91,7 +79,7 @@ body {
   letter-spacing: 0.04em;
   background: var(--iris-color);
   cursor: pointer;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   color: var(--background-color);
 }
 .modal-btn:hover,
@@ -161,17 +149,23 @@ body {
   color: var(--navy-blue-color);
 }
 .portfolio-button {
-  background: var(--cloud-color)
+  background: var(--cloud-color);
   color: var(--iris-color);
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
   background: var(--ocean-color);
-  color: var(--background-color)
+  color: var(--background-color);
+}
+.portfolio-text-img {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate-color);
 }
