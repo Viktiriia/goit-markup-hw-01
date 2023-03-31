@@ -47,6 +47,9 @@ body {
 .menu-link:focus {
   color: var(--ocean-color);
 }
+.addres {
+  font-style: normal;
+}
 .contact {
   font-size: 16px;
   line-height: 1.5;
