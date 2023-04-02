@@ -11,7 +11,7 @@
   --primary-fond: Roboto, sans-serif;
 }
 body {
-  font-family: var(Roboto, sans-serif);
+  font-family: var(--primary-fond);
   color: var(--slate-color);
   background: var(--background-color);
 }
