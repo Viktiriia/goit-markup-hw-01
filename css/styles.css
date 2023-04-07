@@ -10,6 +10,27 @@
   --navy-blue-color: #2e2f42;
   --primary-fond: Roboto, sans-serif;
 }
+h1,
+h2,
+h3,
+h5,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 body {
   font-family: var(--primary-fond);
   color: var(--slate-color);
@@ -21,8 +42,23 @@ body {
 .link {
   text-decoration: none;
 }
-
+.conteiner {
+  max-width: 1158px;
+  margin: auto;
+  padding: 0 15px;
+}
 /* Header */
+.page-header {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--cornflower-color);
+}
+.menu {
+  display: flex;
+  gap: 24px 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -35,6 +71,7 @@ body {
 .logo-dark {
   color: var(--navy-blue-color);
 }
+
 .menu-link {
   font-weight: 500;
   font-size: 16px;
@@ -66,6 +103,7 @@ body {
 /* Hero */
 .hero {
   background: var(--navy-blue-color);
+  text-align: center;
 }
 .main-title {
   font-weight: 700;
@@ -73,6 +111,7 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 48px;
   color: var(--background-color);
 }
 .modal-btn {
@@ -84,6 +123,12 @@ body {
   cursor: pointer;
   font-family: Roboto, sans-serif;
   color: var(--background-color);
+  display: inline-block;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  text-align: center;
+  margin-bottom: 188px;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -97,6 +142,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
   color: var(--navy-blue-color);
 }
 .text-description {
@@ -104,17 +150,40 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
-/* Logistics */
-.title-visibility {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+.section {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+/* Logistics */
+
+.logistics-list {
+  display: flex;
+  gap: 24px;
+}
+
 .logistics-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
   color: var(--navy-blue-color);
+}
+.work-list {
+  display: flex;
+  gap: 24px;
 }
 /* Team */
 .our-team {
@@ -125,10 +194,21 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-top: 32px;
+  margin-bottom: 8px;
   color: var(--navy-blue-color);
 }
+.team-list {
+  display: flex;
+  gap: 24px;
+}
 .team-img {
+  flex-basis: calc((100% - 24px * 3) / 4);
   background-color: #ffffff;
+}
+.team-conteiner {
+  padding-bottom: 32px;
+  text-align: center;
 }
 /* Footer */
 .conteiner-footer {
@@ -138,18 +218,32 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 17.5px;
+  margin-bottom: 100px;
   color: var(--cloud-color);
 }
 .logo-light {
   color: var(--cloud-color);
 }
 /* Portfolio */
+.portfolio-section {
+  margin-top: 96px;
+  margin-bottom: 120px;
+}
 .portfolio-title-img {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-top: 32px;
+  margin-bottom: 8px;
   color: var(--navy-blue-color);
+}
+.list-button {
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+  margin-bottom: 72px;
 }
 .portfolio-button {
   background: var(--cloud-color);
@@ -160,11 +254,27 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   font-family: Roboto, sans-serif;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 12px 24px;
+  text-align: center;
+  border: 1px solid var(--cornflower-color);
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
   background: var(--ocean-color);
   color: var(--background-color);
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+.flex-element {
+  flex-basis: calc((100% - 24px * 2) / 3);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--cornflower-color);
 }
 .portfolio-text-img {
   font-size: 16px;
