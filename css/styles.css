@@ -248,11 +248,12 @@ body {
   color: var(--cloud-color);
 }
 .logo-light {
+  margin-bottom: 16px;
   color: var(--cloud-color);
 }
 /* Portfolio */
 .portfolio-section {
-  padding: 96px 120px;
+  padding: 96px 0 120px;
 }
 .portfolio-title-img {
   font-weight: 500;
