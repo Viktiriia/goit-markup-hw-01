@@ -257,6 +257,7 @@ body {
   margin-right: 76px;
   margin-bottom: 16px;
   padding: 24px 0;
+  display: inline-block; 
   color: var(--iris-color);
 }
 .logo-light {
